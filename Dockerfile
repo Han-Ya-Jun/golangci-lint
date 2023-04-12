@@ -1,4 +1,4 @@
-FROM golang:1.18
+FROM registry.cn-hangzhou.aliyuncs.com/hanyajun/golang:1.18
 #ENV PROTOBUF_VERSION=21.1 \
 #    PROTOC_GEN_GO_VERSION=1.28.0
 #RUN apk add --no-cache build-base curl automake autoconf libtool git zlib-dev
