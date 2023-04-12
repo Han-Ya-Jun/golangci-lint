@@ -6,4 +6,4 @@ FROM registry.cn-hangzhou.aliyuncs.com/hanyajun/golang:1.18
 #RUN mkdir -p /protobuf && \
 #        wget https://github.com/protocolbuffers/protobuf/releases/download/v${PROTOBUF_VERSION}/protobuf-all-${PROTOBUF_VERSION}.zip &&  unzip protobuf-all-21.1.zip && cd protobuf-3.21.1/ &&  ./configure && make install
 
-RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -d -b $(go env GOPATH)/bin v1.52.2
+RUN curl -sSfL https://cdn.hanyajun.com/golangci-lint-install.sh | sh -s -- -d -b $(go env GOPATH)/bin v1.52.2
